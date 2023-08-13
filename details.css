@@ -1,0 +1,156 @@
+body {
+  background-color: #dbf9fc;
+
+  /* Additional styling starts below. */
+
+  font-family: "Lexend Deca", sans-serif;
+  margin: auto;
+  color: #2e475d;
+}
+
+.content {
+  padding: 20px 100px 20px 100px;
+}
+
+.header {
+  padding: 25px;
+  text-align: center;
+  background: rgb(17, 33, 70);
+  color: white;
+  font-size: 25px;
+}
+
+/*Enter your details*/
+
+.left-right-container {
+  display: flex;
+}
+
+.left {
+  flex-basis: 65%;
+  padding-left: 70px;
+}
+
+.right {
+  flex-basis: 35%;
+  padding-right: 60px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #171156;
+}
+
+/*Continue with purchase button*/
+
+.button {
+  background-color: #171156;
+  color: #eee;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #1e2a81;
+}
+
+/* Media queries for responsiveness*/
+@media (max-width: 1200px) {
+  .left-right-container {
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .left {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .right {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+  }
+}
+
+/* Summary Table. */
+
+.summary_table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.summary_table thead tr {
+  background-color: #171156;
+  color: #ffffff;
+  text-align: left;
+}
+
+.summary_table th,
+.summary_table td {
+  padding: 12px 15px;
+}
+
+.summary_table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+.summary_table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.summary_table tbody tr:last-of-type {
+  border-bottom: 2px solid #171156;
+}
+
+.summary_table tbody tr.active-row {
+  font-weight: bold;
+  color: #171156;
+  text-align: left;
+  background-color: rgb(155, 152, 152);
+}

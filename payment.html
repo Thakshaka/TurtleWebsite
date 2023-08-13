@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/payment.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Buy Tickets</h1>
+  </div>
+
+  <div class="left-right-container">
+  <!-- Payment details -->
+  <div class="left">
+    <h1>Payment Details</h1>
+
+    <div class="container">
+      <div class="content">
+        <form id="paymentForm" action="confirmation.html">
+          <div class="user-details">
+            <div class="coolinput">
+              <label for="input" class="text">Name:</label>
+              <input type="text" placeholder="Write here..." name="input" class="input">
+          </div>
+            <div class="input-box">
+              <label for="cardNumber">Card Number</label>
+              <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required />
+            </div>
+            <div class="input-box">
+              <label for="expiryDate">Expiry Date</label>
+              <input type="text" id="expiryDate" name="expiryDate" placeholder="Enter expiry date" required />
+            </div>
+            <div class="input-box">
+              <label for="cvv">CVC / CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="CVC/CVV" required />
+            </div>
+            <div class="input-box">
+              <label for="nameOnCard">Name on card</label>
+              <input type="text" id="nameOnCard" name="nameOnCard" placeholder="Name on card" required />
+            </div>
+          </div>
+          <div>
+            <a href="confirmation.html" class="button" id="button">Pay Amount $<span id="totalAmount"></span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--------------Summary Table-------------->
+
+  <div class="right">
+    <div class="summary">
+      <h1>Summary Table</h1>
+      <table class="summary_table"  id="summary_table_1">
+        <tbody>
+          <tr>
+            <td>Date</td>
+            <td id="selected_date">Current Date</td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td id="selected_time"><span id="start_time">Start Time</span> to <span id="end_time">End Time</span> (<span id="normal_count">0</span> Normal : <span id="peak_count">0</span> Peak)</td>
+          </tr>
+          <tr>
+            <td>Duration</td>
+            <td id="selected_duration"><span id="duration">0</span> hrs</td>
+          </tr>
+          <tr id="ticket_charges">
+            <td>Tickets</td>
+            <td>Charges</td>
+          </tr>
+          <!-- Adding guest type and count rows-->
+        </tbody>
+      </table>
+      <table class="summary_table"  id="summary_table_2">
+        <tbody>
+          <tr>
+            <td>Total Payable ($)</td>
+            <td><span id="total_payable">0</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../js/payment.js"></script>
+</body>
+
+</html>

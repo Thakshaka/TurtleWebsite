@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tickets page</title>
+
+  <!---------- CSS ---------->
+  <link rel="stylesheet" href="../css/tickets.css" />
+
+  <!---------- Fontawesome CDN Link ---------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <title>Tickets page</title>
+</head>
+
+<body>
+  <!-----------------Header----------------->
+  <div class="header">
+    <h1>Buy Tickets</h1>
+  </div>
+
+  <!----------------Dates------------------->
+
+  <div class="left-right-container">
+    <div class="left">
+    <form id="tickets_form" action="details.html">
+    <div class="date">
+      <h1>Dates</h1>
+      <p>When are you coming?</p>
+      <input type="date" id="dateInput"/>
+    </div>
+    <br>
+
+    <div class="guests">
+      <h1>Guests</h1>
+    </div>
+
+    <div class="counter1" id="counter1">
+      <h2 class="counter1_name" id="counter1_name">SL Adult</h2>
+      <div class="counter_bg">
+        <span class="minus" id="minus1">-</span>
+        <span class="num" id="num1">0</span>
+        <span class="plus" id="plus1">+</span>
+      </div>
+    </div>
+
+    <div class="counter2" id="counter2">
+      <h2 class="counter2_name" id="counter2_name">SL Child</h2>
+      <div class="counter_bg">
+        <span class="minus" id="minus2">-</span>
+        <span class="num" id="num2">0</span>
+        <span class="plus" id="plus2">+</span>
+      </div>
+    </div>
+
+
+    <div class="counter3" id="counter3">
+      <h2 class="counter3_name" id="counter3_name">Foreign Adult</h2>
+      <div class="counter_bg">
+        <span class="minus" id="minus3">-</span>
+        <span class="num" id="num3">0</span>
+        <span class="plus" id="plus3">+</span>
+      </div>
+    </div>
+
+    <div class="counter4" id="counter4">
+      <h2 class="counter4_name" id="counter4_name">Foreign Child</h2>
+      <div class="counter_bg">
+        <span class="minus" id="minus4">-</span>
+        <span class="num" id="num4">0</span>
+        <span class="plus" id="plus4">+</span>
+      </div>
+    </div>
+
+    <div class="counter5" id="counter5">
+      <h2 class="counter5_name" id="counter5_name">Infant</h2>
+      <div class="counter_bg">
+        <span class="minus" id="minus5">-</span>
+        <span class="num" id="num5">0</span>
+        <span class="plus" id="plus5">+</span>
+      </div>
+    </div>
+
+    <!--------------Duration------------->
+
+    <div class="duration">
+      <h1>Duration</h1>
+      <p>
+        The Hikkaduwa turtle hatchery will operate all seven days of the week
+        from 07.00 am to 6.00 pm.
+      </p>
+      <div class="dropdown">
+        <div class="select-btn">
+          <span class="btn-text">Select Time Slot</span>
+          <span class="arrow-dwn">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <ul class="list-items">
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="normal_1"> 07.00 am - 08.00 am (Normal) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="normal_2"> 08.00 am - 09.00 am (Normal) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="normal_3"> 09.00 am - 10.00 am (Normal) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="peak_1"> 10.00 am - 11.00 am (Peak) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="peak_2"> 11.00 am - 12.00 pm (Peak) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="peak_3">12.00 pm - 1.00 pm (Peak)</span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="normal_4">1.00 pm - 2.00 pm (Normal) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="normal_5">2.00 pm - 3.00 pm (Normal) </span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="peak_4">3.00 pm - 4.00 pm (Peak)</span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="peak_5">4.00 pm - 5.00 pm (Peak)</span>
+          </li>
+          <li class="item">
+            <span class="checkbox">
+              <i class="fa-solid fa-check check-icon"></i>
+            </span>
+            <span class="item-text" id="peak_6">5.00 pm - 6.00 pm (Peak)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-------------- Duration-Charges Table-------------->
+
+    <div class="charges_table">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th id="normal">Normal Hour</th>
+          <th id="peak">Peak Hour</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="sl_adult">SL Adult</td>
+          <td id="sl_adult_normal_price">$4</td>
+          <td id="sl_adult_peak_price">$6</td>
+        </tr>
+        <tr>
+          <td id="sl_child">SL Child</td>
+          <td id="sl_child_normal_price">$2</td>
+          <td id="sl_child_peak_price">$3</td>
+        </tr>
+        <tr>
+          <td id="foreign_adult">Foreign Adult</td>
+          <td id="foreign_adult_normal_price">$10</td>
+          <td id="foreign_adult_peak_price">$13</td>
+        </tr>
+        <tr>
+          <td id="foreign_child">Foreign Child</td>
+          <td id="foreign_child_normal_price">$5</td>
+          <td id="foreign_child_peak_price">$8</td>
+        </tr>
+        <tr>
+          <td id="infant">Infant</td>
+          <td id="infant_normal_price">$0</td>
+          <td id="infant_peak_price">$0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <!-----------Continue and purchase button------------->
+
+    <div>
+        <a href="details.html" class="button" id="button">Continue and purchase</a>
+    </div>
+    </form>
+    </div>
+    
+
+      <!--------------Summary  Table-------------->
+      <div class="right">
+      <div class="summary">
+        <h1>Summary Table</h1>
+        <table class="summary_table"  id="summary_table_1">
+          <tbody>
+            <tr>
+              <td>Date</td>
+              <td id="selected_date">Current Date</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td id="selected_time"><span id="start_time">7:00</span> to <span id="end_time">8:00</span> (<span id="normal_count">1</span> Normal : <span id="peak_count">0</span> Peak)</td>
+            </tr>
+            <tr>
+              <td>Duration</td>
+              <td id="selected_duration"><span id="duration">1</span> hrs</td>
+            </tr>
+            <tr id="ticket_charges">
+              <td>Tickets</td>
+              <td>Charges</td>
+            </tr>
+            <!-- Adding guest type and count rows-->
+          </tbody>
+        </table>
+        <table class="summary_table"  id="summary_table_2">
+          <tbody>
+            <tr>
+              <td>Total Payable ($)</td>
+              <td><span id="total_payable">0</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+      <!-----------js-link------------->
+      <script src="../js/tickets.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+  background-color: #dbf9fc;
+
+  /* Additional styling starts below. */
+
+  font-family: "Lexend Deca", sans-serif;
+  margin: auto;
+  color: #2e475d;
+}
+
+.content {
+  padding: 20px 100px 20px 100px;
+}
+
+.header {
+  padding: 25px;
+  text-align: center;
+  background: rgb(17, 33, 70);
+  color: white;
+  font-size: 25px;
+}
+
+.confirm {
+  padding-left: 70px;
+  padding-right: 50px;
+}
+
+.message {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Summary Table. */
+
+.summary_table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.summary_table thead tr {
+  background-color: #171156;
+  color: #ffffff;
+  text-align: left;
+}
+
+.summary_table th,
+.summary_table td {
+  padding: 12px 15px;
+}
+
+.summary_table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+.summary_table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.summary_table tbody tr:last-of-type {
+  border-bottom: 2px solid #171156;
+}
+
+.summary_table tbody tr.active-row {
+  font-weight: bold;
+  color: #171156;
+  text-align: left;
+  background-color: rgb(155, 152, 152);
+}

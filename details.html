@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details page</title>
+
+  <!---------- CSS ---------->
+  <link rel="stylesheet" href="../css/details.css" />
+</head>
+
+<body>
+  <!-----------------Header----------------->
+  <div class="header">
+    <h1>Buy Tickets</h1>
+  </div>
+
+  <!-- Enter your details -->
+  <div class="left-right-container">
+    <div class="left">
+      <h1>Enter your details</h1>
+      <div class="container">
+        <div class="content">
+          <form id="detailsForm" action="payment.html">
+            <div class="user-details">
+              <div class="input-box">
+                <label><span class="details">Full Name</span></label>
+                <input type="text" id="fullName" placeholder="Enter your name" required />
+              </div>
+
+              <div class="input-box">
+                <label><span class="details">Mobile Number</span></label>
+                <input type="text" id="mobileNumber" placeholder="Enter your number" required />
+              </div>
+              <div class="input-box">
+                <label><span class="details">Email</span></label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+              </div>
+              <div class="input-box">
+                <label><span class="details">Confirm Email</span></label>
+                <input type="email" id="confirmEmail" placeholder="Confirm your email" required />
+              </div>
+            </div>
+
+            <div>
+              <a href="payment.html" class="button" id="button">Continue and purchase</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--------------Summary Table-------------->
+
+    <div class="right">
+      <div class="summary">
+        <h1>Summary Table</h1>
+        <table class="summary_table"  id="summary_table_1">
+          <tbody>
+            <tr>
+              <td>Date</td>
+              <td id="selected_date">Current Date</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td id="selected_time"><span id="start_time">Start Time</span> to <span id="end_time">End Time</span> (<span id="normal_count">0</span> Normal : <span id="peak_count">0</span> Peak)</td>
+            </tr>
+            <tr>
+              <td>Duration</td>
+              <td id="selected_duration"><span id="duration">0</span> hrs</td>
+            </tr>
+            <tr id="ticket_charges">
+              <td>Tickets</td>
+              <td>Charges</td>
+            </tr>
+            <!-- Adding guest type and count rows-->
+          </tbody>
+        </table>
+        <table class="summary_table"  id="summary_table_2">
+          <tbody>
+            <tr>
+              <td>Total Payable ($)</td>
+              <td><span id="total_payable">0</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="../js/details.js"></script>
+</body>
+
+</html>
