@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation page</title>
+
+    <!---------- CSS ---------->
+    <link rel="stylesheet" href="../css/confirmation.css" />
+  </head>
+  <body>
+    <!-----------------Header----------------->
+    <div class="header">
+      <h1>Buy Tickets</h1>
+    </div>
+
+    <!--------------Confirmation-------------->
+    <div class="confirm">
+      <h1>Confirmation</h1>
+
+      <!------------Confirmation_message------------>
+      <div class="message">
+        <p>
+          Thank you for your order. Your order has been confirmed with us. You
+          can show this confirmation at the entrance. Following is the summary
+          table.
+        </p>
+      </div>
+
+      <!--------------Summary  Table-------------->
+      <div class="summary">
+        <h1>Summary Table</h1>
+        <table class="summary_table"  id="summary_table_1">
+          <tbody>
+            <tr>
+              <td>Full Name</td>
+              <td id="selected_fullName">Full Name</td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td id="selected_email">Email</td>
+            </tr>
+            <tr>
+              <td>Mobile Number</td>
+              <td id="selected_mobile_number">Mobile Number</td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td id="selected_date">Current Date</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td id="selected_time"><span id="start_time">Start Time</span> to <span id="end_time">End Time</span> (<span id="normal_count">0</span> Normal : <span id="peak_count">0</span> Peak)</td>
+            </tr>
+            <tr>
+              <td>Duration</td>
+              <td id="selected_duration"><span id="duration">0</span> hrs</td>
+            </tr>
+            <tr id="ticket_charges">
+              <td>Tickets</td>
+              <td>Charges</td>
+            </tr>
+            <!-- Adding guest type and count rows-->
+          </tbody>
+        </table>
+        <table class="summary_table"  id="summary_table_2">
+          <tbody>
+            <tr>
+              <td>Total Payable ($)</td>
+              <td><span id="total_payable">0</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../js/confirmation.js"></script>
+  </body>
+</html>
